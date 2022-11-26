@@ -43,18 +43,34 @@ body {
 
 /** Timer blocks settings  */
 .timer {
-    padding: 30px;
     background-color: #D80056;
     box-shadow: 1px 1px 100px whitesmoke;
     border-radius: 20px;
     margin: 10px;
-    width: auto;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.timer-up {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
 
 /** Timer num title  */
 .timer h2{
     color: #fff;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
 }
 
