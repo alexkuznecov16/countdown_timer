@@ -114,6 +114,64 @@ body {
 }
 
 
+
+
+@media screen and (max-width: 440px){
+    .timer {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 402px){
+    .timer {
+        width: 110px;
+        height: 110px;
+    }
+
+    .timer h2{
+        font-size: 50px;
+    }
+
+    .timer p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 344px){
+    .timer {
+        width: 100px;
+        height: 100px;
+    }
+
+    .timer h2{
+        font-size: 50px;
+    }
+
+    .timer p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 327px){
+    .countdowntimer {
+        padding: 30px;
+    }
+
+    .timer {
+        width: 95px;
+        height: 95px;
+    }
+
+    .timer h2{
+        font-size: 50px;
+    }
+
+    .timer p{
+        font-size: 17px;
+    }
+}
+
 @media screen and (max-width:300px){
     .countdowntimer {
         padding: 20px;
@@ -144,9 +202,47 @@ body {
     }
 }
 
-@media screen and (max-width: 440px){
+@media screen and (max-width: 260px){
+    .countdowntimer {
+        padding: 10px;
+    }
+
     .timer {
-        width: 140px;
-        height: 140px;
+        width: 85px;
+        height: 85px;
+    }
+
+    .timer h2{
+        font-size: 40px;
+    }
+
+    .timer p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 260px){
+    .countdowntimer {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 210px){
+    .wrapper h1{
+        font-size: 14px;
+        padding: 2px 0px;
+    }
+
+    .timer {
+        width: 75px;
+        height: 75px;
+    }
+
+    .timer h2{
+        font-size: 30px;
+    }
+
+    .timer p{
+        font-size: 10px;
     }
 }
