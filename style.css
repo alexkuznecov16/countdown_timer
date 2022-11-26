@@ -21,10 +21,10 @@ body {
 
 /*! Wrapper ========================================== */
 .wrapper {
-    /* background-color: whitesmoke;
-    padding: 60px 30px;
-    box-shadow: 7px 5px 16px blue; */
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -39,7 +39,7 @@ body {
 /** Countdown timer block settings  */
 .countdowntimer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 40px;
     flex-wrap: wrap;
 }
@@ -48,7 +48,7 @@ body {
 .timer {
     background-color: #D80056;
     box-shadow: 1px 1px 100px whitesmoke;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     margin: 10px;
     width: 150px;
     height: 150px;
@@ -100,4 +100,56 @@ body {
 
 .red-bcg {
     box-shadow: 1px 1px 100px red;
+}
+
+/*! Media screen  */
+
+@media screen and (max-width:776px){
+    .wrapper h1{
+        font-size: 40px;
+        color: peru;
+        padding: 20px 0px;
+        background: black;
+    }
+}
+
+
+@media screen and (max-width:300px){
+    .countdowntimer {
+        padding: 20px;
+    }
+
+    .wrapper h1 {
+        font-size: 18px;
+        padding: 10px 0px;
+    }
+
+    .timer {
+    border-radius: 20px 20px 0 0;
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .timer h2{
+        font-size: 40px;
+    }
+
+    .timer p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .timer {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 420px){
 }
