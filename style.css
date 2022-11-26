@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: url("https://free-png.ru/wp-content/uploads/2021/10/free-png.ru-159.png");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*! Wrapper ========================================== */
+.wrapper {
+    background-color: whitesmoke;
+    padding: 60px 30px;
+    box-shadow: 7px 5px 16px blue;
+
+}
+
+
+/** Wrapper title settings  */
+.wrapper h1{
+    font-size: 50px;
+}
+
+/** Countdown timer block settings  */
+.countdowntimer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/** Timer blocks settings  */
+.timer {
+    padding: 30px;
+    background-color: #D80056;
+    box-shadow: 1px 1px 100px whitesmoke;
+    border-radius: 20px;
+    margin: 10px;
+    width: auto;
+}
+
+/** Timer num title  */
+.timer h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/** Timer text  */
+.timer p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* @media screen and (max-width:750px){
+    .wrapper {
+        padding: 0;
+    }
+
+    .wrapper h1{
+        font-size: 35px;
+    }
+
+    .countdowntimer {
+        display: flex;
+        justify-content: center;
+    }
+} */
+
