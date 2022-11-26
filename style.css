@@ -64,19 +64,3 @@ body {
     text-transform: uppercase;
     font-size: 20px;
 }
-
-/* @media screen and (max-width:750px){
-    .wrapper {
-        padding: 0;
-    }
-
-    .wrapper h1{
-        font-size: 35px;
-    }
-
-    .countdowntimer {
-        display: flex;
-        justify-content: center;
-    }
-} */
-
