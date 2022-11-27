@@ -4,41 +4,41 @@ function countdown(){
     date = Math.floor((dateEnd.getTime() - dateNow.getTime()) / 1000); //variable change big num to small
 
 
-    //* Add variables dataleft - time left(оставшееся время), dataTemp - calculates the difference for days, then for hours, for minutes and for seconds
-    var dataLeft = date,
-        dataTemp = 0;
+    //* Add variables dateleft - time left(оставшееся время), dateTemp - calculates the difference for days, then for hours, for minutes and for seconds
+    var dateLeft = date,
+        dateTemp = 0;
 
 
     //! Дни  ======================================================================================================
-    dataTemp = Math.floor(dataLeft / (24*60*60)); // the rest of the time is / to hours(24)*minutes(60)*seconds(60)
-    dataLeft -= dataTemp *24*60*60; //Counts the difference
+    dateTemp = Math.floor(dateLeft / (24*60*60)); // the rest of the time is / to hours(24)*minutes(60)*seconds(60)
+    dateLeft -= dateTemp *24*60*60; //Counts the difference
 
-    if (dataTemp < 10) dataTemp = '0' + dataTemp; //If number is < 10, then + 0 in the start of number 00, 01, 02
-    document.querySelector('#days').innerHTML = dataTemp; //Finds an element by id and changes its data
+    if (dateTemp < 10) dateTemp = '0' + dateTemp; //If number is < 10, then + 0 in the start of number 00, 01, 02
+    document.querySelector('#days').innerHTML = dateTemp; //Finds an element by id and changes its date
 
 
     //! Часы  ======================================================================================================
-    dataTemp = Math.floor(dataLeft / (60*60));
-    dataLeft -= dataTemp *60*60;
+    dateTemp = Math.floor(dateLeft / (60*60));
+    dateLeft -= dateTemp *60*60;
 
-    if (dataTemp < 10) dataTemp = '0' + dataTemp;
-    document.querySelector('#hours').innerHTML = dataTemp;
+    if (dateTemp < 10) dateTemp = '0' + dateTemp;
+    document.querySelector('#hours').innerHTML = dateTemp;
 
 
     //! Минуты  ======================================================================================================
-    dataTemp = Math.floor(dataLeft / 60);
-    dataLeft -= dataTemp *60;
+    dateTemp = Math.floor(dateLeft / 60);
+    dateLeft -= dateTemp *60;
 
-    if (dataTemp < 10) dataTemp = '0' + dataTemp;
-    document.querySelector('#minutes').innerHTML = dataTemp;
+    if (dateTemp < 10) dateTemp = '0' + dateTemp;
+    document.querySelector('#minutes').innerHTML = dateTemp;
 
 
     //! Секунды  ======================================================================================================
-    dataTemp = Math.floor(dataLeft);
-    dataLeft -= dataTemp;
+    dateTemp = Math.floor(dateLeft);
+    dateLeft -= dateTemp;
 
-    if (dataTemp < 10) dataTemp = '0' + dataTemp;
-    document.querySelector('#seconds').innerHTML = dataTemp;
+    if (dateTemp < 10) dateTemp = '0' + dateTemp;
+    document.querySelector('#seconds').innerHTML = dateTemp;
 }
 
 setInterval(countdown, 1000); // Changes once per second
