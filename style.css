@@ -67,7 +67,6 @@ body {
     background-color: blue;
     border-radius: 20px 20px 0px 0px;
     mix-blend-mode: darken;
-    text-shadow: 4px 4px black;
 }
 
 
@@ -77,6 +76,12 @@ body {
     color: #fff;
     font-size: 60px;
     font-weight: bold;
+    text-shadow: 6px 6px black;
+    transition: .2s;
+}
+
+.timer h2:hover {
+    text-shadow: -6px -6px black;
 }
 
 /** Timer text  */
