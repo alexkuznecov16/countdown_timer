@@ -2,38 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello, this is my first project with JS">
-    <title>Countdown timer html, css, js</title>
+    <title>CountDown Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="wrapper">
-        <h1>Countdown to New 2023 Year:</h1>
-        <div class="countdowntimer">
-            <div class="timer orange-bcg">
-            <div class="timer-up"><h2 id="days">00</h2></div>
-            <div class="timer-down"><p>Days</p></div>
+    
+    <h1 class="title">Until New Year</h1>
+    <div class="countdown__container">
+        <div class="timer">
+            <div class="time">
+                <span id="days">10</span>
+                <span>Days</span>
+            </div>
+            <div class="time">
+                <span id="hours">10</span>
+                <span>Hours</span>
+            </div>
+            <div class="time">
+                <span id="minutes">10</span>
+                <span>Minutes</span>
+            </div>
+            <div class="time">
+                <span id="seconds">10</span>
+                <span>Seconds</span>
+            </div>
         </div>
-            <div class="timer blue-bcg">
-            <div class="timer-up"><h2 id="hours">00</h2></div>
-            <div class="timer-down"><p>Hours</p></div>
-        </div>
-            <div class="timer green-bcg">
-            <div class="timer-up"><h2 id="minutes">00</h2></div>
-            <div class="timer-down"><p>Minutes</p></div>
-        </div>
-            <div class="timer red-bcg">
-            <div class="timer-up"><h2 id="seconds">00</h2></div>
-            <div class="timer-down"><p>Seconds</p></div>
-        </div>
-        </div>
-        <!-- /.countdowntimer -->
     </div>
-    <!-- /.wrapper -->
+    <!-- /.countdown__container -->
+    <footer class="footer">
+        &COPY; Alexander Kuznecov 2023
+    </footer>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
