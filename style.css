@@ -1,278 +1,48 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    background: url("https://wallpapercave.com/wp/wp5863592.jpg");
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/*! Wrapper ========================================== */
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/** Wrapper title settings  */
-.wrapper h1{
-    font-size: 50px;
-    color: peru;
-    padding: 30px 20px;
-    background: black;
-}
-
-/** Countdown timer block settings  */
-.countdowntimer {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    flex-wrap: wrap;
-}
-
-/** Timer blocks settings  */
-.timer {
-    background-color: #D80056;
-    box-shadow: 1px 1px 100px whitesmoke;
-    border-radius: 20px 20px 0 0;
-    margin: 10px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.timer-up {
+body, html{
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: blue;
-    border-radius: 20px 20px 0px 0px;
-    mix-blend-mode: darken;
-}
-
-
-
-/** Timer num title  */
-.timer h2{
-    color: #fff;
-    font-size: 60px;
-    font-weight: bold;
-    text-shadow: 6px 6px black;
-    transition: .2s;
-}
-
-.timer h2:hover {
-    text-shadow: -6px -6px black;
-}
-
-/** Timer text  */
-.timer p{
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.orange-bcg {
-    box-shadow: 1px 1px 100px orange;
-}
-
-.blue-bcg {
-    box-shadow: 1px 1px 100px blue;
-}
-
-.green-bcg {
-    box-shadow: 1px 1px 100px green;
-}
-
-.red-bcg {
-    box-shadow: 1px 1px 100px red;
-}
-
-/*! Media screen  */
-
-@media screen and (min-width:1600px) {
-    .countdowntimer {
-        padding: 20px;
-    }
-
-    .wrapper h1 {
-        font-size: 88px;
-        padding: 10px 20px;
-    }
-
-    .timer {
-    width: 300px;
-    height: 300px;
-    }
-
-    .timer h2{
-        font-size: 160px;
-    }
-
-    .timer p{
-        font-size: 40px;
-    }
-}
-
-
-@media screen and (max-width:776px){
-    .wrapper h1{
-        font-size: 40px;
-        color: peru;
-        padding: 20px 0px;
-        background: black;
-    }
-}
-
-
-
-
-@media screen and (max-width: 440px){
-    .timer {
-        width: 140px;
-        height: 140px;
-    }
-}
-
-@media screen and (max-width: 402px){
-    .timer {
-        width: 110px;
-        height: 110px;
-    }
-
-    .timer h2{
-        font-size: 50px;
-    }
-
-    .timer p{
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 344px){
-    .timer {
-        width: 100px;
-        height: 100px;
-    }
-
-    .timer h2{
-        font-size: 50px;
-    }
-
-    .timer p{
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 327px){
-    .countdowntimer {
-        padding: 30px;
-    }
-
-    .timer {
-        width: 95px;
-        height: 95px;
-    }
-
-    .timer h2{
-        font-size: 50px;
-    }
-
-    .timer p{
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width:300px){
-    .countdowntimer {
-        padding: 20px;
-    }
-
-    .wrapper h1 {
-        font-size: 18px;
-        padding: 10px 0px;
-    }
-
-    .timer {
-    border-radius: 20px 20px 0 0;
-    margin: 10px;
-    width: 90px;
-    height: 90px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    }
-
-    .timer h2{
-        font-size: 40px;
-    }
-
-    .timer p{
-        font-size: 15px;
-    }
+    align-items: center;
 }
 
-@media screen and (max-width: 260px){
-    .countdowntimer {
-        padding: 10px;
-    }
-
-    .timer {
-        width: 85px;
-        height: 85px;
-    }
-
-    .timer h2{
-        font-size: 40px;
-    }
-
-    .timer p{
-        font-size: 13px;
-    }
+.title {
+    text-align: center;
+    font-size: 25px;
 }
-
-@media screen and (max-width: 260px){
-    .countdowntimer {
-        padding: 0px;
-    }
+.countdown__container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-@media screen and (max-width: 210px){
-    .wrapper h1{
-        font-size: 14px;
-        padding: 2px 0px;
-    }
-
-    .timer {
-        width: 75px;
-        height: 75px;
-    }
-
-    .timer h2{
-        font-size: 30px;
-    }
-
-    .timer p{
-        font-size: 10px;
-    }
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 200px;
+    background-color: aqua;
+    column-gap: 30px;
+    padding: 0 25px;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: #2a2a2a;
+    color: #fff;
 }
